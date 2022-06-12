@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="4.5.1" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="1.6.1" />
+    <PackageReference Include="MailKit" Version="2.3.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+	  <PackageReference Include="Google.Apis.Calendar.v3" Version="1.43.0.1830" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COMPANY.Application\COMPANY.Application.csproj" />
+    <ProjectReference Include="..\COMPANY.Common\COMPANY.Common.csproj" />
+    <ProjectReference Include="..\COMPANY.Domain\COMPANY.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

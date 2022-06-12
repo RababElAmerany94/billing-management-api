@@ -1,0 +1,2014 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>COMPANY.Presentation</name>
+    </assembly>
+    <members>
+        <member name="T:COMPANY.Presentation.Authorization.ModuleAttribute">
+            <summary>
+            a class define permission attribute
+            </summary>
+        </member>
+        <member name="T:COMPANY.Presentation.BackgroundServices.DevisEnRetardService">
+            <summary>
+            this service will handle create passages
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.BackgroundServices.DevisEnRetardService.ExecuteAsync">
+            <summary>
+            Execute the back ground task
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.BackgroundServices.DevisEnRetardService.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{COMPANY.Presentation.BackgroundServices.DevisEnRetardService})">
+            <summary>
+            create an instant of <see cref="T:COMPANY.Presentation.BackgroundServices.DevisEnRetardService"/>
+            </summary>
+            <param name="services">the <see cref="T:System.IServiceProvider"/> instant</param>
+            <param name="logger"></param>
+        </member>
+        <member name="T:COMPANY.Presentation.BackgroundServices.DossierEnRetardService">
+            <summary>
+            partial part for <see cref="T:COMPANY.Presentation.BackgroundServices.DossierEnRetardService"/>
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.BackgroundServices.DossierEnRetardService.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{COMPANY.Presentation.BackgroundServices.DossierEnRetardService})">
+            <summary>
+            create an instant of <see cref="T:COMPANY.Presentation.BackgroundServices.DossierEnRetardService"/>
+            </summary>
+            <param name="services">the <see cref="T:System.IServiceProvider"/> instant</param>
+            <param name="logger"></param>
+        </member>
+        <member name="T:COMPANY.Presentation.BackgroundServices.SynchronizeDossiersWithAnsroute">
+            <summary>
+            partial part for <see cref="T:COMPANY.Presentation.BackgroundServices.SynchronizeDossiersWithAnsroute"/>
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.BackgroundServices.SynchronizeDossiersWithAnsroute.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{COMPANY.Presentation.BackgroundServices.SynchronizeDossiersWithAnsroute})">
+            <summary>
+            create an instant of <see cref="T:COMPANY.Presentation.BackgroundServices.SynchronizeDossiersWithAnsroute"/>
+            </summary>
+            <param name="services">the <see cref="T:System.IServiceProvider"/> instant</param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Accounting.ComptabiliteController.Get(COMPANY.Application.Models.General.FilterOptions.VentesJournalFilterOption)">
+            <summary>
+            get the list of sales journal as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Accounting.ComptabiliteController.ExporterExcel(COMPANY.Application.Models.General.FilterOptions.VentesJournalFilterOption)">
+            <summary>
+            export the list of sales journal as an excel format
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Accounting.ComptabiliteController.Get(COMPANY.Application.Models.General.FilterOptions.ComptesJournalFilterOption)">
+            <summary>
+            get the list of accounts journal as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Accounting.ComptabiliteController.ExporterExcel(COMPANY.Application.Models.General.FilterOptions.ComptesJournalFilterOption)">
+            <summary>
+            export the list of accounts journal as an excel format
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="T:COMPANY.Presentation.Controllers.Base.BaseController">
+            <summary>
+            the base controller for common code reuse
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Base.BaseController.#ctor">
+            <summary>
+            create an instant of <see cref="T:COMPANY.Presentation.Controllers.Base.BaseController"/>
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Base.BaseController.ActionResultForAsync``1(System.Threading.Tasks.Task{``0})">
+            <summary>
+            this method is used to return the proper action result type
+            </summary>
+            <typeparam name="TResult">the type of the Result being processed</typeparam>
+            <param name="taskResult">the result to process</param>
+            <returns>the proper Action Result base on the passed in Result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Base.BaseController.ActionResultFor``1(``0)">
+            <summary>
+            this method is used to return the proper action result type
+            </summary>
+            <typeparam name="TResult">the type of the Result being processed</typeparam>
+            <param name="result">the result to process</param>
+            <returns>the proper Action Result base on the passed in Result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Base.BaseController.GetBaseUrl">
+            <summary>
+            get the base URL, ex: "http://localhost:5000"
+            </summary>
+            <returns>the base URL</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.Get(COMPANY.Application.Models.General.FilterOptions.AvoirFilterOption)">
+            <summary>
+            get the list of avoirs as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.Get(System.String)">
+            <summary>
+            get the avoir with the given id
+            </summary>
+            <param name="id">the id of the avoir to retrieve</param>
+            <returns>the avoir</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.Create(COMPANY.Application.Models.BusinessEntities.Documents.Avoir.AvoirCreateModel)">
+            <summary>
+            create a avoir using the AvoirCreateModel
+            </summary>
+            <param name="avoirModel">the model to create the avoir from it</param>
+            <returns>the newly created avoir</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Documents.Avoir.AvoirUpdateModel)">
+            <summary>
+            update the avoir with the given model
+            </summary>
+            <param name="id">the id of the avoir to be updated</param>
+            <param name="avoirModel">the update model</param>
+            <returns>the updated avoir</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.Delete(System.String)">
+            <summary>
+            delete the avoir with the given id
+            </summary>
+            <param name="id">the id of the avoir to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the avoir with the given id
+            </summary>
+            <param name="id">the id of the avoir to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.GeneratePDF(System.String)">
+            <summary>
+            generate PDF Avoir
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.ExampleGeneratePDF(COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels.DocumentParametersModel)">
+            <summary>
+            example generate PDF avoir
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.AvoirController.SendEmail(System.String,COMPANY.Application.Models.GeneralModels.BodiesModels.MailModels.MailModel)">
+            <summary>
+            send avoir in email
+            </summary>
+            <param name="avoirId">the id of facture</param>
+            <param name="mailModel">the mail model</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.Get(COMPANY.Application.Models.Generals.FilterOptions.BonCommandeFilterOption)">
+            <summary>
+            get the list of bon commande as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.Get(System.String)">
+            <summary>
+            get the bon commande with the given id
+            </summary>
+            <param name="id">the id of the bon commande to retrieve</param>
+            <returns>the bon commande</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.Create(COMPANY.Application.Models.BusinessEntities.Documents.BonCommande.BonCommandeCreateModel)">
+            <summary>
+            create a bon commande using the BonCommandeCreateModel
+            </summary>
+            <param name="model">the model to create the bon commande from it</param>
+            <returns>the newly created bon commande</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Documents.BonCommande.BonCommandeUpdateModel)">
+            <summary>
+            update the bon commande with the given model
+            </summary>
+            <param name="id">the id of the bon commande to be updated</param>
+            <param name="model">the update model</param>
+            <returns>the updated bon commande</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.Delete(System.String)">
+            <summary>
+            delete the bon commande with the given id
+            </summary>
+            <param name="id">the id of the bon commande to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.GeneratePDF(System.String)">
+            <summary>
+            generate PDF
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.ExampleGeneratePDF(COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels.DocumentParametersModel)">
+            <summary>
+            example generate PDF bon commande
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.BonCommandeController.SendEmail(System.String,COMPANY.Application.Models.GeneralModels.BodiesModels.MailModels.MailModel)">
+            <summary>
+            send bon commande in email
+            </summary>
+            <param name="bonCommandeId">the id of bon commande</param>
+            <param name="mailModel">the mail model</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.Get(COMPANY.Application.Models.General.FilterOptions.DevisFilterOption)">
+            <summary>
+            get the list of devis as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.Get(System.String)">
+            <summary>
+            get the devis with the given id
+            </summary>
+            <param name="id">the id of the devis to retrieve</param>
+            <returns>the devis</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.Create(COMPANY.Application.Models.BusinessEntitiesModels.Documents.Devis.DevisCreateModel)">
+            <summary>
+            create a devis using the ClientCreateModel
+            </summary>
+            <param name="devisModel">the model to create the devis from it</param>
+            <returns>the newly created devis</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.Documents.Devis.DevisUpdateModel)">
+            <summary>
+            update the devis with the given model
+            </summary>
+            <param name="id">the id of the devis to be updated</param>
+            <param name="devisModel">the update model</param>
+            <returns>the updated devis</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.Delete(System.String)">
+            <summary>
+            delete the devis with the given id
+            </summary>
+            <param name="id">the id of the devis to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.GeneratePDF(System.String)">
+            <summary>
+            generate PDF pdf
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.ExampleGeneratePDF(COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels.DocumentParametersModel)">
+            <summary>
+            example generate PDF devis
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.SendEmail(System.String,COMPANY.Application.Models.GeneralModels.BodiesModels.MailModels.MailModel)">
+            <summary>
+            send devis in email
+            </summary>
+            <param name="devisId">the id of devis</param>
+            <param name="mailModel">the mail model</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.DevisController.SignDevis(COMPANY.Application.Models.BusinessEntities.Documents.Devis.DevisSignatureModel)">
+            <summary>
+            sign a devis
+            </summary>
+            <param name="devisSignature">the devis signature model</param>
+            <returns>a devis result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.Get(COMPANY.Application.Models.General.FilterOptions.FactureFilterOption)">
+            <summary>
+            get the list of factures as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.Get(System.String)">
+            <summary>
+            get the facture with the given id
+            </summary>
+            <param name="id">the id of the facture to retrieve</param>
+            <returns>the facture</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.Create(COMPANY.Application.Models.BusinessEntities.Documents.Facture.FactureCreateModel)">
+            <summary>
+            create a facture using the Facture Create Model
+            </summary>
+            <param name="factureModel">the model to create the facture from it</param>
+            <returns>the newly created facture</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Documents.Facture.FactureUpdateModel)">
+            <summary>
+            update the facture with the given model
+            </summary>
+            <param name="id">the id of the facture to be updated</param>
+            <param name="factureModel">the update model</param>
+            <returns>the updated facture</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.Delete(System.String)">
+            <summary>
+            delete the facture with the given id
+            </summary>
+            <param name="id">the id of the facture to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the facture with the given id
+            </summary>
+            <param name="id">the id of the facture to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.CancelFacture(System.String)">
+            <summary>
+            cancel facture
+            </summary>
+            <param name="id">the id of the facture to cancel</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.GeneratePDF(System.String)">
+            <summary>
+            generate PDF Facture
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.ExampleGeneratePDF(COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels.DocumentParametersModel)">
+            <summary>
+            example generate PDF facture
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.SendEmail(System.String,COMPANY.Application.Models.GeneralModels.BodiesModels.MailModels.MailModel)">
+            <summary>
+            send facture in email
+            </summary>
+            <param name="factureId">the id of facture</param>
+            <param name="mailModel">the mail model</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.FactureController.ExportReleveFacturesPDF(COMPANY.Application.Models.General.FilterOptions.ReleveFacturesFilterOption)">
+            <summary>
+            export releve factures format PDF
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instant</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.Get(Xterme.Application.Models.GeneralModels.PagingModels.PaiementFilterOption)">
+            <summary>
+            get the list of paiement as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.Get(System.String)">
+            <summary>
+            get the paiement with the given id
+            </summary>
+            <param name="id">the id of the paiement to retrieve</param>
+            <returns>the paiement</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.Create(COMPANY.Application.Models.BusinessEntities.Documents.Paiement.PaiementCreateModel)">
+            <summary>
+            create a paiement using the ClientCreateModel
+            </summary>
+            <param name="paiementModel">the model to create the paiement from it</param>
+            <returns>the newly created paiement</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Documents.Paiement.PaiementUpdateModel)">
+            <summary>
+            update the paiement with the given model
+            </summary>
+            <param name="id">the id of the paiement to be updated</param>
+            <param name="paiementModel">the update model</param>
+            <returns>the updated paiement</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.Delete(System.String)">
+            <summary>
+            delete the paiement with the given id
+            </summary>
+            <param name="id">the id of the paiement to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.MovementCompteToCompte(COMPANY.Application.Models.BusinessEntities.Documents.Paiement.PaiementMovementCompteToCompteModel)">
+            <summary>
+            movement amount from account to another account
+            </summary>
+            <param name="model">the model describe movement</param>
+            <returns>a result instant</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.GetTotalPaiments(Xterme.Application.Models.GeneralModels.PagingModels.PaiementFilterOption)">
+            <summary>
+            get total payments
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instant</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Documents.PaiementController.PaiementGroupeOblige(COMPANY.Application.Models.BusinessEntities.Documents.Paiement.PaiementGroupeObligeModel)">
+            <summary>
+            paiement groupe of obligé
+            </summary>
+            <param name="model"></param>
+            <returns>a result instant</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.Get(COMPANY.Application.Models.General.FilterOptions.DossierFilterOption)">
+            <summary>
+            get the list of dossier as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a dossier paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.Get(System.String)">
+            <summary>
+            get the dossier with the given id
+            </summary>
+            <param name="id">the id of the dossier to retrieve</param>
+            <returns>a result instance contains dossier</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.Create(COMPANY.Application.Models.DossierCreateModel)">
+            <summary>
+            create a new dossier record
+            </summary>
+            <returns>the newly created dossier</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.Update(System.String,COMPANY.Application.Models.DossierUpdateModel)">
+            <summary>
+            update the dossier with the given model
+            </summary>
+            <param name="id">the id of the dossier to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated dossier</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.Delete(System.String)">
+            <summary>
+            delete the dossier with the given id
+            </summary>
+            <param name="id">the id of the dossier to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.MemoDossier})">
+            <summary>
+            save the given memo to the dossier with the given id
+            </summary>
+            <param name="id">the id of the dossier to save the memo dossier for it</param>
+            <param name="memos">the memo dossier to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.GetArticle(System.String)">
+            <summary>
+            retrieve articles of dossier
+            </summary>
+            <returns>a list of articles</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.CheckUserAssignedSameDateAndHour(COMPANY.Application.Models.General.FilterOptions.CheckUserAssignedSameDateAndHourFilterOption)">
+            <summary>
+            check user already assigned to another dossier in the same date and hour
+            </summary>
+            <returns>a boolean</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.MarkDossierAplanifier(System.String)">
+            <summary>
+            mark dossier à planifier
+            </summary>
+            <param name="dossierId">the id of dossier</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.SynchronizeWithAntsroute(System.String)">
+            <summary>
+            synchronize order of antsroute with our dossier
+            </summary>
+            <returns>a result instance contains dossier updated</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.SynchronizeWithAntsroute">
+            <summary>
+            synchronize orders of antsroute with our dossiers
+            </summary>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.SaveVisteTechnique(System.String,COMPANY.Domain.Entities.OwnedEntities.VisteTechnique)">
+            <summary>
+            save the given viste technique to the dossier
+            </summary>
+            <param name="id">the id of the dossier to save the viste technique for him</param>
+            <param name="visteTechnique">the viste technique to be saved</param>
+            <returns>an operation result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.CreatePV(COMPANY.Application.Models.BusinessEntities.Documents.DossierPV.DossierPVCreateModel)">
+            <summary>
+            create a PV with the given model
+            </summary>
+            <returns>the newly created PV</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.UpdatePV(System.String,COMPANY.Application.Models.BusinessEntities.Documents.DossierPV.DossierPVUpdateModel)">
+            <summary>
+            update the PV with the given model
+            </summary>
+            <param name="id">the id of the PV to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated PV</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.DeletePV(System.String)">
+            <summary>
+            delete the PV with the given id
+            </summary>
+            <param name="id">the id of the PV to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.CreateFicheControle(COMPANY.Application.Models.BusinessEntities.Documents.FicheControle.FicheControleCreateModel)">
+            <summary>
+            create a fiche controle with the given model
+            </summary>
+            <returns>the newly created fiche controle</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.UpdateFicheControle(System.String,COMPANY.Application.Models.BusinessEntities.Documents.FicheControle.FicheControleUpdateModel)">
+            <summary>
+            update the fiche controle with the given model
+            </summary>
+            <param name="id">the id of the fiche controle to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated fiche controle</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.DossierController.DeleteFicheControle(System.String)">
+            <summary>
+            delete the fiche controle with the given id
+            </summary>
+            <param name="id">the id of the fiche controle to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.Get(COMPANY.Application.Models.GeneralModels.PagingModels.EchangeCommercialFilterOption)">
+            <summary>
+            get the list of commercial exchange paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.Get(System.String)">
+            <summary>
+            get the commercial exchange with the given id
+            </summary>
+            <param name="id">the id of the commercial exchange to retrieve</param>
+            <returns>the commercial exchange</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.Create(COMPANY.Application.Models.BusinessEntities.General.EchangeCommercial.EchangeCommercialCreateModel)">
+            <summary>
+            create a new commercial exchange record
+            </summary>
+            <param name="createModel">the create model</param>
+            <returns>the newly created commercial exchange</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.Update(System.String,COMPANY.Application.Models.BusinessEntities.General.EchangeCommercial.EchangeCommercialUpdateModel)">
+            <summary>
+            update the commercial exchange with the given model
+            </summary>
+            <param name="id">the id of the commercial exchange to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated commercial exchange</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.Delete(System.String)">
+            <summary>
+            delete the commercial exchange with the given id
+            </summary>
+            <param name="id">the id of the commercial exchange to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the commercial exchange with the given id
+            </summary>
+            <param name="id">the id of the commercial exchange to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.SynchronisationWithGoogleCalendar">
+            <summary>
+            synchronization commercial exchanges with Google Calendar
+            </summary>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.UpdateDateEvent(COMPANY.Application.Models.BusinessEntities.General.EchangeCommercial.ChangeDateEventModel)">
+            <summary>
+            update date event
+            </summary>
+            <param name="changeDateEventModel">the model</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.EchangeCommercialController.CheckRdvIsExist(COMPANY.Application.Models.BusinessEntities.General.EchangeCommercial.CheckRdvIsExistModel)">
+            <summary>
+            check RDV is exist
+            </summary>
+            <param name="model">the model represent criteria</param>
+            <returns>a bool result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.CategoryDocumentsController.Get">
+            <summary>
+            get the list of all category documents
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.CategoryDocumentsController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of category documents as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.CategoryDocumentsController.Create(COMPANY.Application.Models.BusinessEntitiesModels.CategoryDocumentsModels.CategoryDocumentCreateModel)">
+            <summary>
+            create a new category document record
+            </summary>
+            <param name="categoryDocumentCreateModel">the model to create the category document from it</param>
+            <returns>the newly created categoryDocuments</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.CategoryDocumentsController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.CategoryDocumentsModels.CategoryDocumentUpdateModel)">
+            <summary>
+            update the category document with the given model
+            </summary>
+            <param name="id">the id of the document to be updated</param>
+            <param name="categoryDocumentUpdateModel">the update model</param>
+            <returns>the updated category document</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.CategoryDocumentsController.Delete(System.String)">
+            <summary>
+            delete the category document with the given id
+            </summary>
+            <param name="id">the id of the category document to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.CategoryDocumentsController.IsUnique(System.String)">
+            <summary>
+            check name of category document is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.UniteController.Get">
+            <summary>
+            get the list of all unite
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.UniteController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of unite as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.UniteController.Create(COMPANY.Application.Models.BusinessEntitiesModels.UniteModels.UniteCreateModel)">
+            <summary>
+            create a new category product record
+            </summary>
+            <returns>the newly created unite</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.UniteController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.UniteModels.UniteUpdateModel)">
+            <summary>
+            update the category product with the given model
+            </summary>
+            <param name="id">the id of the unite to be updated</param>
+            <param name="uniteUpdateModel">the update model</param>
+            <returns>the updated unite</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.UniteController.Delete(System.String)">
+            <summary>
+            delete the unite with the given id
+            </summary>
+            <param name="id">the id of the unite to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.UniteController.IsUnique(System.String)">
+            <summary>
+            check name of unite is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of produits as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Get(System.String)">
+            <summary>
+            get the produit with the given id
+            </summary>
+            <param name="id">the id of the produit to retrieve</param>
+            <returns>the produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Create(COMPANY.Application.Models.BusinessEntitiesModels.ProduitModels.ProduitCreateModel)">
+            <summary>
+            create a produit using the ProduitCreateModel
+            </summary>
+            <param name="produitModel">the model to create the produit from it</param>
+            <returns>the newly created produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.ProduitModels.ProduitUpdateModel)">
+            <summary>
+            update the produit with the given model
+            </summary>
+            <param name="id">the id of the produit to be updated</param>
+            <param name="produitModel">the update model</param>
+            <returns>the updated produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Delete(System.String)">
+            <summary>
+            delete the produit with the given id
+            </summary>
+            <param name="id">the id of the produit to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the produit with the given id
+            </summary>
+            <param name="id">the id of the produit to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Create(COMPANY.Application.Models.BusinessEntitiesModels.ProduitModels.ChangeVisibilityProduitModel)">
+            <summary>
+            change visibility produit
+            </summary>
+            <param name="changeVisibilityProduitModel">the change visibility model</param>
+            <returns>a visibility of produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.GetPrixProduitParAgence(System.String)">
+            <summary>
+            get the prix produit par agence with the given id
+            </summary>
+            <param name="produitId">the id of the produit to retrieve</param>
+            <returns>the produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Create(COMPANY.Application.Models.BusinessEntitiesModels.PrixProduitParAgenceModels.PrixProduitParAgenceCreateModel)">
+            <summary>
+            create a  prix produit par agence using the produitCreateModel
+            </summary>
+            <param name="produitModel">the model to create the produit from it</param>
+            <returns>the newly created produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.PrixProduitParAgenceModels.PrixProduitParAgenceUpdateModel)">
+            <summary>
+            update the  prix produit par agence with the given model
+            </summary>
+            <param name="id">the id of the produit to be updated</param>
+            <param name="produitModel">the update model</param>
+            <returns>the updated produit</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.ProduitController.DeletePrixProduitParAgence(System.String)">
+            <summary>
+            delete the prix produit par agence with the given id
+            </summary>
+            <param name="id">the id of the produit to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="T:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController">
+            <summary>
+            Configuration management API controller
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController.Get">
+            <summary>
+            get the list of all marques
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of special articles as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController.Create(COMPANY.Application.Models.BusinessEntitiesModels.SpecialArticleModels.SpecialArticleCreateModel)">
+            <summary>
+            create a new special article record
+            </summary>
+            <returns>the newly created special article</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.SpecialArticleModels.SpecialArticleUpdateModel)">
+            <summary>
+            update the special article with the given model
+            </summary>
+            <param name="id">the id of the business origin to be updated</param>
+            <param name="specialArticleUpdateModel">the update model</param>
+            <returns>the updated special article</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController.Delete(System.String)">
+            <summary>
+            delete the special article with the given id
+            </summary>
+            <param name="id">the id of the special article to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.EntitiesControllers.SpecialArticleController.IsUnique(System.String)">
+            <summary>
+            check designation of special article is unique
+            </summary>
+            <param name="name">the designation to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Get">
+            <summary>
+            get all the list of agences
+            </summary>
+            <returns>list of agences</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of Agence as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Get(System.String)">
+            <summary>
+            get the agence by the given id
+            </summary>
+            <param name="id">the id of the agence</param>
+            <returns>one agence base of his id</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Create(COMPANY.Application.Models.AgenceCreateModel)">
+            <summary>
+            create a new agence record
+            </summary>
+            <returns>the newly created agence</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Update(System.String,COMPANY.Application.Models.AgenceUpdateModel)">
+            <summary>
+            update the agence with the given model
+            </summary>
+            <param name="id">the id of the agence to be updated</param>
+            <param name="AgenceModel">the update model</param>
+            <returns>the updated agence</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Delete(System.String)">
+            <summary>
+            delete the agence with the given id
+            </summary>
+            <param name="id">the id of the agence to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the Agence with the given id
+            </summary>
+            <param name="id">the id of the Agence to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.ExporterExcel">
+            <summary>
+            export the list of Agences as an excel format
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.CreateLogin(COMPANY.Application.Models.CreateLoginModel)">
+            <summary>
+            create a login for the Agence
+            </summary>
+            <param name="loginModel">the login model</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.GetLogin(System.String)">
+            <summary>
+            get the login of given agence
+            </summary>
+            <param name="id">the agence to retrieve the login for it</param>
+            <returns>the user model of the agence</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.DeleteLogin(System.String)">
+            <summary>
+            delete the login for the agence with the given id
+            </summary>
+            <param name="id">the id of the agence to delete the login for it</param>
+            <returns>the user model of the agence</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.Create(COMPANY.Application.Models.BusinessEntities.ExternalPartners.Agence.ChangeActivationAgenceModel)">
+            <summary>
+            change activation of agence
+            </summary>
+            <param name="changeActivationAgenceModel">the change visibility model</param>
+            <returns>a activation of agence</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.AgenceController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetDevisStatistic(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get statistic devis group by status
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetFactureStatistic(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get statistic facture group by status
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetAvoirStatistic(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get statistic avoir group by status
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetDossierStatistic(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get statistic dossier group by status
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetChiffreAffaire(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get chiffre d'affaire
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetClassementClients(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get classsement clietns
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetChiffreAffaireRestantAencaisser(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+             get chiffre d'affaire restant à encaisser
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetFacturesArticlesByCategory(COMPANY.Application.Models.General.Dashboard.FacturesArticlesByCategoryFilterOption)">
+            <summary>
+            get articles of factures by category
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>an result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetFacturesArticlesTotals(COMPANY.Application.Models.General.Dashboard.AdvanceDashboardFilterOption)">
+            <summary>
+            get articles of factures with totals
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>an result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetFacturesArticlesQuantities(COMPANY.Application.Models.General.Dashboard.AdvanceDashboardFilterOption)">
+            <summary>
+            get articles of factures with quantities
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>an result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetVentilationChiffreAffairesCommerciaux(COMPANY.Application.Models.General.Dashboard.AdvanceDashboardFilterOption)">
+            <summary>
+            get ventilation chiffre affaires commerciaux
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>an result instance</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetRepartitionTypesTravauxParTechnicien(COMPANY.Application.Models.General.Dashboard.AdvanceDashboardFilterOption)">
+            <summary>
+            get repartition types travaux par technicien
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>an enumerable of repartition types travaux par technicien</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetRepartitionDossiersTechnicien(COMPANY.Application.Models.General.Dashboard.AdvanceDashboardFilterOption)">
+            <summary>
+            get repartition dossiers par technicien
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>a result enumerable of repartition dossiers par technicien</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.DashboardController.GetCountDossiers(COMPANY.Application.Models.General.Dashboard.DashboardFilterOption)">
+            <summary>
+            get count dossiers of a client
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>count dossiers</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.SmsController.Get(COMPANY.Application.Models.Generals.FilterOptions.SmsFilterOption)">
+            <summary>
+            get the list of sms as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.SmsController.Create(COMPANY.Application.Models.BusinessEntities.General.Sms.EnvoyerSmsModel)">
+            <summary>
+            send a SMS using the EnvoyerSmsModel
+            </summary>
+            <param name="model">the model to send the sms</param>
+            <returns>the newly sent sms</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.SpotHitHooksController.ReceptionResponse(Company.SpotHit.Models.PushResponse)">
+            <summary>
+            reception response sms
+            </summary>
+            <param name="reponse"></param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.General.SpotHitHooksController.ReceptionStop(Company.SpotHit.Models.PushStop)">
+            <summary>
+            reception stop sms
+            </summary>
+            <param name="reponse"></param>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.AgendaEvenementController.Get">
+            <summary>
+            get the list of all agenda event
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.AgendaEvenementController.Get(COMPANY.Application.Models.Generals.FilterOptions.AgendaEvenementFilterOption)">
+            <summary>
+            get the list of agenda event as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.AgendaEvenementController.Create(COMPANY.Application.Models.BusinessEntities.Parameters.AgendaEvenementType.AgendaEvenementCreateModel)">
+            <summary>
+            create a new agenda event record
+            </summary>
+            <returns>the newly created agenda event</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.AgendaEvenementController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Parameters.AgendaEvenementType.AgendaEvenementUpdateModel)">
+            <summary>
+            update the agenda event with the given model
+            </summary>
+            <param name="id">the id of the agenda event to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated agenda event</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.AgendaEvenementController.Delete(System.String)">
+            <summary>
+            delete the agenda event with the given id
+            </summary>
+            <param name="id">the id of the agenda event to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.AgendaEvenementController.IsUnique(System.String)">
+            <summary>
+            check name of agenda event is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ChampsSiteInstallationController.Get">
+            <summary>
+            get the list of all champs site d'installation
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ChampsSiteInstallationController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of champs site d'installation as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ChampsSiteInstallationController.Create(COMPANY.Application.Models.BusinessEntities.Parameters.ChampsSiteInstallation.ChampSiteInstallationCreateModel)">
+            <summary>
+            create a new champs site d'installation record
+            </summary>
+            <returns>the newly created champs site d'installation</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ChampsSiteInstallationController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Parameters.ChampsSiteInstallation.ChampSiteInstallationUpdateModel)">
+            <summary>
+            update the champ site d'installation with the given model
+            </summary>
+            <param name="id">the id of the champs site d'installation to be updated</param>
+            <param name="model">the update model</param>
+            <returns>the updated champ site d'installation</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ChampsSiteInstallationController.Delete(System.String)">
+            <summary>
+            delete the champ site d'installation with the given id
+            </summary>
+            <param name="id">the id of the champ site d'installation to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ChampsSiteInstallationController.IsUnique(System.String)">
+            <summary>
+            check name of champ site d'installation is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.LogementTypeController.Get">
+            <summary>
+            get the list of all logement type
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.LogementTypeController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of logement type as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.LogementTypeController.Create(COMPANY.Application.Models.BusinessEntities.Parameters.LogementType.LogementTypeCreateModel)">
+            <summary>
+            create a new logement type record
+            </summary>
+            <returns>the newly created logement type</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.LogementTypeController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Parameters.LogementType.LogementTypeUpdateModel)">
+            <summary>
+            update the logement type with the given model
+            </summary>
+            <param name="id">the id of the logement type to be updated</param>
+            <param name="logementTypeUpdateModel">the update model</param>
+            <returns>the updated logement type</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.LogementTypeController.Delete(System.String)">
+            <summary>
+            delete the unite with the given id
+            </summary>
+            <param name="id">the id of the logement type to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.LogementTypeController.IsUnique(System.String)">
+            <summary>
+            check name of logement type is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ModeleSmsController.Get">
+            <summary>
+            get the list of all Modele Sms
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ModeleSmsController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of Modele Sms as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ModeleSmsController.Create(COMPANY.Application.Models.BusinessEntities.Parameters.ModeleSms.ModeleSmsCreateModel)">
+            <summary>
+            create a new Modele Sms record
+            </summary>
+            <returns>the newly created Modele Sms</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ModeleSmsController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Parameters.ModeleSms.ModeleSmsUpdateModel)">
+            <summary>
+            update the Modele Sms with the given model
+            </summary>
+            <param name="id">the id of the Modele Sms to be updated</param>
+            <param name="modeleSmsUpdateModel">the update model</param>
+            <returns>the updated Modele Sms</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ModeleSmsController.Delete(System.String)">
+            <summary>
+            delete the unite with the given id
+            </summary>
+            <param name="id">the id of the Modele Sms to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.ModeleSmsController.IsUnique(System.String)">
+            <summary>
+            check name of Modele Sms is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.SourceDuLeadController.Get">
+            <summary>
+            get the list of all source du lead
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.SourceDuLeadController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of source du lead as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.SourceDuLeadController.Create(COMPANY.Application.Models.BusinessEntities.Parameters.SourceDuLead.SourceDuLeadCreateModel)">
+            <summary>
+            create a new Source du lead record
+            </summary>
+            <returns>the newly created SourceDuLead</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.SourceDuLeadController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Parameters.SourceDuLead.SourceDuLeadUpdateModel)">
+            <summary>
+            update the Source du lead with the given model
+            </summary>
+            <param name="id">the id of the business origin to be updated</param>
+            <param name="SourceDuLeadUpdateModel">the update model</param>
+            <returns>the updated Source du lead</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.SourceDuLeadController.Delete(System.String)">
+            <summary>
+            delete the Source du lead with the given id
+            </summary>
+            <param name="id">the id of the Source du lead to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.SourceDuLeadController.IsUnique(System.String)">
+            <summary>
+            check name of Source du lead is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.TypeChauffageController.Get">
+            <summary>
+            get the list of all chauffage type
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.TypeChauffageController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of chauffage type as paged Result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.TypeChauffageController.Create(COMPANY.Application.Models.BusinessEntities.Parameters.TypeChauffage.TypeChauffageCreateModel)">
+            <summary>
+            create a new chauffage type record
+            </summary>
+            <returns>the newly created chauffage type</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.TypeChauffageController.Update(System.String,COMPANY.Application.Models.BusinessEntities.Parameters.TypeChauffage.TypeChauffageUpdateModel)">
+            <summary>
+            update the chauffage type with the given model
+            </summary>
+            <param name="id">the id of the chauffage type to be updated</param>
+            <param name="chauffageTypeUpdateModel">the update model</param>
+            <returns>the updated chauffage type</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.TypeChauffageController.Delete(System.String)">
+            <summary>
+            delete the unite with the given id
+            </summary>
+            <param name="id">the id of the chauffage type to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Controllers.Parameters.TypeChauffageController.IsUnique(System.String)">
+            <summary>
+            check name of chauffage type is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="T:COMPANY.Presentation.AuthExtentions">
+            <summary>
+            this class is used o configure Authentication
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.AuthExtentions.AddAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            add Authentication to the project
+            </summary>
+            <param name="services">the DI Collection service</param>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:COMPANY.Presentation.Extensions">
+            <summary>
+            a class for adding application extensions and register application dependencies
+            </summary>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.AddCompanyConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            add the Application Core Functionalities
+            </summary>
+            <param name="services">the DI Service Collection</param>
+            <param name="configuration">the configuration manager</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.RegisterSpotHit(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            register spothit
+            </summary>
+            <param name="services">the DI Service collection</param>
+            <param name="configuration">the configuration</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.RegiseterApplicationFactoriesAndBuilders(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            we use this method to register all Builders and factories
+            </summary>
+            <param name="services">the DI Service collection</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            configue cors
+            </summary>
+            <param name="services">the DI service Collection</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            configure Swagger for API Documentation
+            </summary>
+            <param name="services">the DI service Collection</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.SetUpAsync(Microsoft.AspNetCore.Hosting.IWebHost)">
+            <summary>
+            this method is used to automatically create the database by implementing the panding migrations
+            </summary>
+            <param name="webHost"></param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.SetUpBackgroundServices(Microsoft.AspNetCore.Hosting.IWebHost)">
+            <summary>
+            set up the background services
+            </summary>
+            <param name="webHost">the web host instant</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.RegisterBackgroundServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            configure background services
+            </summary>
+            <param name="services">the services collections</param>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.GetService``1(Microsoft.Extensions.DependencyInjection.IServiceScope)">
+            <summary>
+            get the service from the given service scope
+            </summary>
+            <typeparam name="TService">the type of the service to retrieve</typeparam>
+            <param name="scope">the scope service instant</param>
+            <returns>the service instant</returns>
+        </member>
+        <member name="M:COMPANY.Presentation.Extensions.ConfigureLogger(System.String)">
+            <summary>
+            this method is user to configure the logger
+            </summary>
+        </member>
+        <member name="T:COMPANY.Presentation.Filters.ResponseExceptionFilter">
+            <summary>
+            a class describe HTTP response exception
+            </summary>
+        </member>
+        <member name="T:COMPANY.BackgroundServices.AvoirEnRetardService">
+            <summary>
+            this service will handle get list avoirs with status en retard
+            </summary>
+            <summary>
+            partial part for <see cref="T:COMPANY.BackgroundServices.AvoirEnRetardService"/>
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.AvoirEnRetardService.ExecuteAsync">
+            <summary>
+            Execute the back ground task
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.AvoirEnRetardService.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{COMPANY.BackgroundServices.AvoirEnRetardService})">
+            <summary>
+            create an instant of <see cref="T:COMPANY.BackgroundServices.AvoirEnRetardService"/>
+            </summary>
+            <param name="services">the <see cref="T:System.IServiceProvider"/> instant</param>
+            <param name="logger"></param>
+        </member>
+        <member name="T:COMPANY.BackgroundServices.BaseBackgroundService">
+            <summary>
+            the base Background Service
+            </summary>
+        </member>
+        <member name="F:COMPANY.BackgroundServices.BaseBackgroundService._services">
+            <summary>
+            the services provider
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.BaseBackgroundService.#ctor(System.IServiceProvider)">
+            <summary>
+            create an instant of <see cref="T:COMPANY.BackgroundServices.BaseBackgroundService"/>
+            </summary>
+            <param name="services">the service provider</param>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.BaseBackgroundService.Invoke">
+            <summary>
+            invoice the background service logic, this function will only call <see cref="M:COMPANY.BackgroundServices.BaseBackgroundService.ExecuteAsync"/>
+            so make sure all your logic is set in that function
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.BaseBackgroundService.Execute">
+            <summary>
+            Execute the back ground task
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.BaseBackgroundService.ExecuteAsync">
+            <summary>
+            Execute the back ground task
+            </summary>
+        </member>
+        <member name="T:COMPANY.BackgroundServices.FactureEnRetardService">
+            <summary>
+            this service will handle update facture status when deadline completed
+            </summary>
+            <summary>
+            partial part for <see cref="T:COMPANY.BackgroundServices.FactureEnRetardService"/>
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.FactureEnRetardService.ExecuteAsync">
+            <summary>
+            Execute the back ground task
+            </summary>
+        </member>
+        <member name="M:COMPANY.BackgroundServices.FactureEnRetardService.#ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{COMPANY.BackgroundServices.FactureEnRetardService})">
+            <summary>
+            create an instant of <see cref="T:COMPANY.BackgroundServices.FactureEnRetardService"/>
+            </summary>
+            <param name="services">the <see cref="T:System.IServiceProvider"/> instant</param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Get(System.String)">
+            <summary>
+            get the user with the given Id
+            </summary>
+            <param name="id">the id of the user</param>
+            <returns>return the user</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Create(COMPANY.Application.Models.UserCreateModel)">
+            <summary>
+            create a new user
+            </summary>
+            <param name="userModel">the user model</param>
+            <returns>the newly created user</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Delete(System.String)">
+            <summary>
+            delete the user with the given Id
+            </summary>
+            <param name="id">the id of the user to be deleted</param>
+            <returns>an operation result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Login(COMPANY.Application.Models.UserLoginModel)">
+            <summary>
+            log in the user and generate a token for his session
+            </summary>
+            <param name="loginModel">the login model</param>
+            <returns>a user token model</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.UpdatePassword(COMPANY.Application.Models.UserUpdatePasswordModel)">
+            <summary>
+            update the user password
+            </summary>
+            <param name="updatePasswordModel">the password model</param>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.UpdateUser(System.String,COMPANY.Application.Models.UserUpdateModel)">
+            <summary>
+            update the user with the given id
+            </summary>
+            <param name="userId">the id of the user to be updated</param>
+            <param name="userModel">the user model</param>
+            <returns>the updated version of the user</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.IsUserNameUnique(System.String)">
+            <summary>
+            check if the user name is unique
+            </summary>
+            <param name="userName">the user name to be checked</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.UpdateUserLogin(COMPANY.Application.Models.LoginModel)">
+            <summary>
+            update the user login info
+            </summary>
+            <param name="loginModel">the login model</param>
+            <returns>the updated version of the user</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Get(COMPANY.Application.Models.UserFilterOption)">
+            <summary>
+            get the list of users as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.GetLite(System.String)">
+            <summary>
+            get lite information of the user with the given Id
+            </summary>
+            <param name="id">the id of the user</param>
+            <returns>return the user</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the user with the given id
+            </summary>
+            <param name="id">the id of the user to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Create(COMPANY.Application.Models.Account.ChangeActivationUserModel)">
+            <summary>
+            change activation of agence
+            </summary>
+            <param name="changeActivateUser">the change visibility model</param>
+            <returns>a activation of user</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.GetPlanningTechnicien(COMPANY.Application.Models.General.FilterOptions.CommercialsPlanningFilterOption)">
+            <summary>
+            get planning of commercials
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AccountController.Create(System.String,System.String)">
+            <summary>
+            update Google calendar id
+            </summary>
+            <param name="id"></param>
+            <param name="googleCalendarId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.Get">
+            <summary>
+            get the list of all Clients
+            </summary>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.Get(COMPANY.Application.Models.GeneralModels.PagingModels.ClientFilterOption)">
+            <summary>
+            get the list of clients as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.Get(System.String)">
+            <summary>
+            get the client with the given id
+            </summary>
+            <param name="id">the id of the client to retrieve</param>
+            <returns>the client</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.Create(COMPANY.Application.Models.ClientCreateModel)">
+            <summary>
+            create a client using the ClientCreateModel
+            </summary>
+            <param name="clientModel">the model to create the client from it</param>
+            <returns>the newly created client</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.Update(System.String,COMPANY.Application.Models.ClientUpdateModel)">
+            <summary>
+            update the client with the given model
+            </summary>
+            <param name="id">the id of the client to be updated</param>
+            <param name="clientModel">the update model</param>
+            <returns>the updated client</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.Delete(System.String)">
+            <summary>
+            delete the client with the given id
+            </summary>
+            <param name="id">the id of the client to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.CheckUniquePhone(System.String)">
+            <summary>
+            check if the given phone is unique, returns true if unique, false if not
+            </summary>
+            <param name="phone">the phone to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.SaveMemos(System.String,System.Collections.Generic.ICollection{COMPANY.Domain.Entities.OwnedEntities.Memo})">
+            <summary>
+            save the given memo to the client with the given id
+            </summary>
+            <param name="id">the id of the client to save the memo for it</param>
+            <param name="memos">the memo to be saved</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.ClientsController.ExporterExcel">
+            <summary>
+            export the list of client as an excel format
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.Get">
+            <summary>
+            get the list of all founisseurs
+            </summary>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of founisseurs as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.Get(System.String)">
+            <summary>
+            get the founisseur with the given id
+            </summary>
+            <param name="id">the id of the founisseur to retrieve</param>
+            <returns>the Supplier</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.Create(COMPANY.Application.Models.FournisseurCreateModel)">
+            <summary>
+            create a founrisseur using the FournisseurCreateModel
+            </summary>
+            <param name="createModel">the model to create the founisseur from it</param>
+            <returns>the newly created founisseur</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.Update(System.String,COMPANY.Application.Models.FournisseurUpdateModel)">
+            <summary>
+            update the founisseur with the given model
+            </summary>
+            <param name="id">the id of the founisseur to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated Supplier</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.Delete(System.String)">
+            <summary>
+            delete the founisseur with the given id
+            </summary>
+            <param name="id">the id of the Supplier to be deleted</param>
+            <returns>a result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.ExporterExcel">
+            <summary>
+            export the list of I as an excel format
+            </summary>
+            <returns>the result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FournisseursController.CheckUniqueReference(System.String)">
+            <summary>
+            check if the given reference is unique, returns true if unique, false if not
+            </summary>
+            <param name="reference">the reference to be checked</param>
+            <returns>true if unique, false if not</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AddressController.GetCountries">
+            <summary>
+            get the list of all countries in the database
+            </summary>
+            <returns>list of all countries</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AddressController.GetCountries(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            list of countries as paged result
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>list of countries as paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AddressController.GetCountry(System.String)">
+            <summary>
+            get the country with the given id
+            </summary>
+            <param name="id">the id of the country to be retrieved</param>
+            <returns>the country with the given id</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AddressController.GetDepartements">
+            <summary>
+            get the list of departements in the database
+            </summary>
+            <returns>list of departements</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AddressController.GetDepartements(COMPANY.Application.Models.GeneralModels.PagingModels.DepartmentFilterOption)">
+            <summary>
+            get the list of departements as PagedResult
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>list of departements as paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.AddressController.GetDepartement(System.String)">
+            <summary>
+            get the departement with the given id
+            </summary>
+            <param name="id">the id of department to be retrieved</param>
+            <returns>the departements with the given id</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.GeneralControllers.CheckController.Get">
+            <summary>
+            check server is work
+            </summary>
+        </member>
+        <member name="M:COMPANY.Controllers.GeneralControllers.NotificationsController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of notifications as paged result
+            </summary>
+            <param name="filterOption">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.GeneralControllers.NotificationsController.MarkAsSeen(System.String)">
+            <summary>
+            mark seen notification
+            </summary>
+            <param name="id">the id of the notification</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.GeneralControllers.NotificationsController.MarkAllAsSeen">
+            <summary>
+            mark all as seen notification
+            </summary>o
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FileManagerController.CreateFile(System.Collections.Generic.List{COMPANY.Application.Models.FileManagerModel})">
+            <summary>
+            save list of files
+            </summary>
+            <param name="fileManagerModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FileManagerController.Get(System.String)">
+            <summary>
+            get file by name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FileManagerController.Delete(System.String)">
+            <summary>
+            delete file
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.FileManagerController.Delete(System.Collections.Generic.List{System.String})">
+            <summary>
+            delete list files
+            </summary>
+            <param name="names">the list of names</param>
+            <returns>a result instance</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.BankAccountsController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of bank accounts as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.BankAccountsController.Create(COMPANY.Application.Models.BusinessEntitiesModels.BankAccountModels.BankAccountCreateModel)">
+            <summary>
+            create a new bank account record
+            </summary>
+            <returns>the newly created bank account</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.BankAccountsController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.BankAccountModels.BankAccountUpdateModel)">
+            <summary>
+            update the bank account with the given model
+            </summary>
+            <param name="id">the id of the bank account to be updated</param>
+            <param name="bankAccountUpdateModel">the update model</param>
+            <returns>the updated bank account</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.BankAccountsController.Delete(System.String)">
+            <summary>
+            delete the bank account with the given id
+            </summary>
+            <param name="id">the id of the bank account to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.BankAccountsController.IsUnique(System.String)">
+            <summary>
+            check name of bank account is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.CategoryProductsController.Get">
+            <summary>
+            get the list of all category products
+            </summary>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.CategoryProductsController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of category products as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.CategoryProductsController.Create(COMPANY.Application.Models.BusinessEntitiesModels.CategoryProductModels.CategoryProductCreateModel)">
+            <summary>
+            create a new category product record
+            </summary>
+            <returns>the newly created categoryProduct</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.CategoryProductsController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.CategoryProductModels.CategoryProductUpdateModel)">
+            <summary>
+            update the category product with the given model
+            </summary>
+            <param name="id">the id of the business origin to be updated</param>
+            <param name="categoryProductUpdateModel">the update model</param>
+            <returns>the updated category product</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.CategoryProductsController.Delete(System.String)">
+            <summary>
+            delete the category product with the given id
+            </summary>
+            <param name="id">the id of the category product to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.CategoryProductsController.IsUnique(System.String)">
+            <summary>
+            check name of category product is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.ConfigMessagerieController.Get">
+            <summary>
+            get the config messagerie
+            </summary>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.ConfigMessagerieController.Create(COMPANY.Application.Models.BusinessEntitiesModels.ConfigMessagerieModels.ConfigMessagerieCreateModel)">
+            <summary>
+            create a new config messagerie record
+            </summary>
+            <returns>the newly created config messagerie</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.ConfigMessagerieController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.ConfigMessagerieModels.ConfigMessagerieUpdateModel)">
+            <summary>
+            update the config messagerie with the given model
+            </summary>
+            <param name="id">the id of the config messagerie to be updated</param>
+            <param name="updateModel">the update model</param>
+            <returns>the updated config messagerie</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.DocumentParametersController.Get">
+            <summary>
+            get the document parameters
+            </summary>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.DocumentParametersController.Create(COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels.DocumentParametersCreateModel)">
+            <summary>
+            create a new document parameters record
+            </summary>
+            <returns>the newly created document parameters</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.DocumentParametersController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels.DocumentParametersUpdateModel)">
+            <summary>
+            update the document parameters with the given model
+            </summary>
+            <param name="id">the id of the document parameters to be updated</param>
+            <param name="documentParametersUpdateModel">the update model</param>
+            <returns>the updated document parameters</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.NumerotationController.Get">
+            <summary>
+            get the list of all Numerotations
+            </summary>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.NumerotationController.Get(System.String)">
+            <summary>
+            get the client with the given id
+            </summary>
+            <param name="id">the id of the numerotation to retrieve</param>
+            <returns>the client</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.NumerotationController.Create(COMPANY.Application.Models.BusinessEntitiesModels.NumerotationModels.NumerotationCreateModel)">
+            <summary>
+            create a client using the NumerotationCreateModel
+            </summary>
+            <param name="clientModel">the model to create the client from it</param>
+            <returns>the newly created client</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.NumerotationController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.NumerotationModels.NumerotationUpdateModel)">
+            <summary>
+            update the client with the given model
+            </summary>
+            <param name="id">the id of the client to be updated</param>
+            <param name="clientModel">the update model</param>
+            <returns>the updated client</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.NumerotationController.GenerateNumerotation(COMPANY.Domain.Enums.NumerotationType)">
+            <summary>
+            generate the numerotation with the given type
+            </summary>
+            <param name="type">the type of the numerotation to retrieve</param>
+            <returns>the numerotation</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.NumerotationController.GenerateReferenceDocumentComptable(COMPANY.Application.Models.GeneralModels.PagingModels.NumerotationDocumentComptableFilterOption)">
+            <summary>
+            generate reference for accounting documents
+            </summary>
+            <param name="filterOption">the filter option</param>
+            <returns>the result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.PeriodeComptableController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of accounting periods as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.PeriodeComptableController.Get(System.String)">
+            <summary>
+            get the accounting period with the given id
+            </summary>
+            <param name="id">the id of the accounting period to retrieve</param>
+            <returns>the accounting period</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.PeriodeComptableController.Create(COMPANY.Application.Models.BusinessEntitiesModels.AccountingPeriodModals.PeriodeComptableCreateModel)">
+            <summary>
+            create a accounting period using the PeriodeComptableCreateModel
+            </summary>
+            <param name="accountingPeriodCreateModel">the model to create the accounting period from it</param>
+            <returns>the newly created accounting period</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.PeriodeComptableController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.AccountingPeriodModals.PeriodeComptableUpdateModel)">
+            <summary>
+            update the accounting period with the given model
+            </summary>
+            <param name="id">the id of the accounting period to be updated</param>
+            <param name="accountingPeriodUpdateModel">the update model</param>
+            <returns>the updated accounting period</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.PeriodeComptableController.ClosingPeriodeComptable(System.String)">
+            <summary>
+            closing accounting period
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.RegulationModesController.Get(COMPANY.Application.Models.FilterOption)">
+            <summary>
+            get the list of regulation modes as paged Result
+            </summary>
+            <param name="filterModel">the filter options</param>
+            <returns>a paged result</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.RegulationModesController.Create(COMPANY.Application.Models.BusinessEntitiesModels.RegulationModeModels.RegulationModeCreateModel)">
+            <summary>
+            create a new regulation mode record
+            </summary>
+            <returns>the newly created regulation mode</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.RegulationModesController.Update(System.String,COMPANY.Application.Models.BusinessEntitiesModels.RegulationModeModels.RegulationModeUpdateModel)">
+            <summary>
+            update the regulation mode with the given model
+            </summary>
+            <param name="id">the id of the regulation mode to be updated</param>
+            <param name="regulationModeUpdateModel">the update model</param>
+            <returns>the updated regulation mode</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.RegulationModesController.Delete(System.String)">
+            <summary>
+            delete the regulation mode with the given id
+            </summary>
+            <param name="id">the id of the regulation mode to be deleted</param>
+            <returns>an operation result object</returns>
+        </member>
+        <member name="M:COMPANY.Controllers.EntitiesControllers.RegulationModesController.IsUnique(System.String)">
+            <summary>
+            check name of regulation mode is unique
+            </summary>
+            <param name="name">the name to check is unique</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

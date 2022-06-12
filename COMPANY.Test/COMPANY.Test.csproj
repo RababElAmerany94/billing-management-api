@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <AssemblyName>COMPANY.Test</AssemblyName>
+
+    <RootNamespace>COMPANY.Test</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COMPANY.Application\COMPANY.Application.csproj" />
+    <ProjectReference Include="..\COMPANY.Domain\COMPANY.Domain.csproj" />
+    <ProjectReference Include="..\COMPANY.Presentation\COMPANY.Presentation.csproj" />
+    <ProjectReference Include="..\COMPANY.Presistence\COMPANY.Presistence.csproj" />
+  </ItemGroup>
+
+</Project>

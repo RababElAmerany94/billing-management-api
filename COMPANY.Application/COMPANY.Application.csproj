@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COMPANY.Common\COMPANY.Common.csproj" />
+    <ProjectReference Include="..\COMPANY.Domain\COMPANY.Domain.csproj" />
+    <ProjectReference Include="..\Company.AutoInjection\Company.AutoInjection.csproj" />
+    <ProjectReference Include="..\Company.AutoMapperRegister\Company.AutoMapperRegister.csproj" />
+    <ProjectReference Include="..\Company.SpotHit\Company.SpotHit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataInteraction\DataAccess\ExternalPartners\" />
+    <Folder Include="DataInteraction\DataAccess\Relations\" />
+  </ItemGroup>
+
+</Project>

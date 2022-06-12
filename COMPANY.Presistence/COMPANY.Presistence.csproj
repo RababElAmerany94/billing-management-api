@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="DataContext\EntitiesConfigurations\Relationships\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="DataContext\EntitiesConfigurations\Relationships\**" />
+    <None Remove="bin\**" />
+    <None Remove="DataContext\EntitiesConfigurations\Relationships\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201203121450_FixDossierInstallationl.cs" />
+    <Compile Remove="Migrations\20201203121450_FixDossierInstallationl.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COMPANY.Application\COMPANY.Application.csproj" />
+    <ProjectReference Include="..\COMPANY.Common\COMPANY.Common.csproj" />
+    <ProjectReference Include="..\COMPANY.Domain\COMPANY.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\ExternalParterns\" />
+    <Folder Include="DataAccess\Relations\" />
+  </ItemGroup>
+
+</Project>
