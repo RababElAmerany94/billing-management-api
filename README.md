@@ -17,6 +17,7 @@ Api solution aimed at optimizing the efficiency of internal services, the relati
 * [iTextSharp](https://www.nuget.org/packages/iTextSharp/)
 * [c#](https://www.jetbrains.com/resharper-cpp)
 * [MariaDB](https://mariadb.org)
+* [.NETCore](https://netcorecloud.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -50,6 +51,18 @@ You can instruct your audience on installing and setting up your app
 1. Clone the repo
    ```sh
    git clone https://github.com/RababElAmerany94/billing-management-api
+   ```
+2. Open Project in
+   ```sh
+   Visual Studio
+   ```
+3. Building application
+   ```sh
+   Click Clean and Build
+   ```
+4. Running application
+   ```sh
+   Click on Run or Debug
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
