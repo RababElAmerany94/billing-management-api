@@ -64,7 +64,12 @@ You can instruct your audience on installing and setting up your app
    ```sh
    Click on Run or Debug
    ```
-
+5. Login application admin/admin
+   ```sql
+   INSERT INTO `users` (`CreatedOn`, `LastModifiedOn`, `SearchTerms`, `Id`, `FirstName`, `LastName`, `Email`, `PhoneNumber`, `UserName`, `Passwordhash`, `IsActive`, `LastConnection`, `AccessfailedCount`, `Matricule`, `Historique`, `GoogleCalendarId`, `AgenceId`, `ClientId`, `RoleId`) VALUES
+	('2020-04-09 10:48:42.000000', '2020-11-03 08:53:13.795464', 'Admin Demo MA00', '1', 'Admin', 'Demo', 'demo@gmail.colm', '0615326598', 'admin', '1/eo28BLkmc=:UJ3/zUTTeMbjpHhGnUqepA==', b'1', '2020-11-03 09:53:13.795445', 0, 'MA00', '[]', NULL, NULL, NULL, 1);
+   ```
+  
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
