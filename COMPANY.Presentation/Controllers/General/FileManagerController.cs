@@ -3,7 +3,7 @@
     using Application.Models;
     using COMPANY.Application.DataInteraction.Generals;
     using COMPANY.Presentation.Controllers.Base;
-    using CompanyFileManager;
+    using InovaFileManager;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using System;

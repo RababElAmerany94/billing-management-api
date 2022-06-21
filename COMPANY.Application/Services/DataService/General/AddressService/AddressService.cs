@@ -8,7 +8,7 @@
     using COMPANY.Application.Models.GeneralModels.PagingModels;
     using COMPANY.Domain.Entities;
     using COMPANY.Presistence.Implementations;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System.Collections.Generic;
     using System.Threading.Tasks;

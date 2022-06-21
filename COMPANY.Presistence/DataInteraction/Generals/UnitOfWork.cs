@@ -13,7 +13,7 @@
     using COMPANY.Presistence.DataAccess.Documents;
     using COMPANY.Presistence.DataAccess.General;
     using COMPANY.Presistence.DataContext;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;

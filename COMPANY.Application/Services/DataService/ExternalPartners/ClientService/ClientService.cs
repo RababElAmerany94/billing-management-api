@@ -19,7 +19,7 @@
     using COMPANY.Domain.Entities.Relations;
     using COMPANY.Domain.Enums;
     using COMPANY.Domain.Enums.ExternalPartners;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Query;
     using Microsoft.Extensions.DependencyInjection;

@@ -13,7 +13,7 @@
     using COMPANY.Domain.Entities.Documents;
     using COMPANY.Domain.Enums;
     using COMPANY.Domain.Enums.Documents;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Collections.Generic;

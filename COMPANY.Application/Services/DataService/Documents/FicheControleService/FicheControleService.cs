@@ -9,7 +9,7 @@
     using COMPANY.Application.Models.BusinessEntities.Documents.FicheControle;
     using COMPANY.Common.Helpers;
     using COMPANY.Domain.Entities;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System.Threading.Tasks;
 

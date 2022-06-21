@@ -4,7 +4,7 @@
     using COMPANY.Application.Models.BusinessEntities.Accounting.Comptabilite;
     using COMPANY.Application.Services.FileService;
     using COMPANY.Common.Helpers;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using OfficeOpenXml;
     using OfficeOpenXml.Style;

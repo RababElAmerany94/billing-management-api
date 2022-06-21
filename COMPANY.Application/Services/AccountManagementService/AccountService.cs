@@ -17,7 +17,7 @@
     using COMPANY.Domain.Enums;
     using COMPANY.Domain.Enums.Authentification;
     using COMPANY.Presistence.Implementations;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Query;
     using Microsoft.Extensions.DependencyInjection;

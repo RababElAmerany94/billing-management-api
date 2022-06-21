@@ -5,7 +5,7 @@
     using COMPANY.Domain.Entities.OwnedEntities;
     using COMPANY.Domain.Enums;
     using COMPANY.Domain.Enums.Documents;
-    using Company.AutoMapperRegister.Attributes;
+    using Inova.AutoMapperRegister.Attributes;
     using System;
     using System.Collections.Generic;
 

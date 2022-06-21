@@ -10,7 +10,7 @@
     using COMPANY.Common.Helpers;
     using COMPANY.Domain.Entities;
     using COMPANY.Domain.Enums;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Collections.Generic;

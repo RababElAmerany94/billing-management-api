@@ -27,7 +27,7 @@ namespace COMPANY.Presistence.Migrations
             migrationBuilder.InsertData(
                 table: "AgendaEvenements",
                 columns: new[] { "Id", "CreatedOn", "LastModifiedOn", "Name", "SearchTerms", "Type" },
-                values: new object[] { "AgendaEvenement::13", new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), null, "rdv my_company", null, 4 });
+                values: new object[] { "AgendaEvenement::13", new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), null, "rdv company", null, 4 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_EchangeCommercials_SourceRDVId",

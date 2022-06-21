@@ -3,7 +3,7 @@
     using COMPANY.Application.Models.GeneralModels.CalculationModels;
     using COMPANY.Domain.Entities.OwnedEntities;
     using COMPANY.Domain.Enums;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System.Collections.Generic;
     using System.Linq;

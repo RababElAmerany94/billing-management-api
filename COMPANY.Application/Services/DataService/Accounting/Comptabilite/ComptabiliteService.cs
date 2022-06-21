@@ -19,7 +19,7 @@
     using COMPANY.Domain.Enums.Documents;
     using COMPANY.Domain.Enums.General;
     using COMPANY.Presistence.Implementations;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
     using System;

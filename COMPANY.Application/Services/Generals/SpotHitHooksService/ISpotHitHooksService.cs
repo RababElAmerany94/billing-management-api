@@ -1,6 +1,6 @@
 ﻿namespace COMPANY.Application.Services.Generals.SpotHitHooksService
 {
-    using Company.SpotHit.Models;
+    using Inova.SpotHit.Models;
     using System.Threading.Tasks;
 
     public interface ISpotHitHooksService

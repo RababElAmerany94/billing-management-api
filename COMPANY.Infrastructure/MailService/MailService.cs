@@ -3,7 +3,7 @@
     using Application.Services.MailService;
     using COMPANY.Application.Models.BusinessEntitiesModels.ConfigMessagerieModels;
     using COMPANY.Application.Models.GeneralModels.MailModels;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using System.IO;

@@ -2,7 +2,7 @@
 {
     using COMPANY.Application.Models.BusinessEntities.General.Base;
     using COMPANY.Domain.Entities.Documents;
-    using Company.AutoMapperRegister.Attributes;
+    using Inova.AutoMapperRegister.Attributes;
 
     [ModelFor(typeof(BonCommande))]
     public class BonCommandeUpdateModel : BonCommandeCreateModel, IEntityUpdateModel<BonCommande>

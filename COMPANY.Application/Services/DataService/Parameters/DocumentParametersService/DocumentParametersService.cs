@@ -7,7 +7,7 @@
     using COMPANY.Application.Interfaces;
     using COMPANY.Application.Models.BusinessEntitiesModels.DocumentParametersModels;
     using COMPANY.Domain.Entities;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System.Threading.Tasks;
 

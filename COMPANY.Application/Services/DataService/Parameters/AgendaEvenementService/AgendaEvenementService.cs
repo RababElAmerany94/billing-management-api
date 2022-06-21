@@ -7,7 +7,7 @@
     using COMPANY.Application.Models.BusinessEntities.Parameters.AgendaEvenementType;
     using COMPANY.Application.Models.Generals.FilterOptions;
     using COMPANY.Domain.Entities.Parameters;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Linq.Expressions;

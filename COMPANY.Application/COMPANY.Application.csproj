@@ -16,9 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="..\COMPANY.Common\COMPANY.Common.csproj" />
     <ProjectReference Include="..\COMPANY.Domain\COMPANY.Domain.csproj" />
-    <ProjectReference Include="..\Company.AutoInjection\Company.AutoInjection.csproj" />
-    <ProjectReference Include="..\Company.AutoMapperRegister\Company.AutoMapperRegister.csproj" />
-    <ProjectReference Include="..\Company.SpotHit\Company.SpotHit.csproj" />
+    <ProjectReference Include="..\Inova.AutoInjection\Inova.AutoInjection.csproj" />
+    <ProjectReference Include="..\Inova.AutoMapperRegister\Inova.AutoMapperRegister.csproj" />
+    <ProjectReference Include="..\Inova.SpotHit\Inova.SpotHit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

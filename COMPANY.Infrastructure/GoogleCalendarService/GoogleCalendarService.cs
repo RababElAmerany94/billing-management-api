@@ -7,7 +7,7 @@
     using Google.Apis.Calendar.v3;
     using Google.Apis.Calendar.v3.Data;
     using Google.Apis.Services;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;

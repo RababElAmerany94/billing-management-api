@@ -6,7 +6,7 @@
     using COMPANY.Application.Services.Generals.AntsrouteService;
     using COMPANY.Application.Tools;
     using COMPANY.Helpers;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;

@@ -5,7 +5,7 @@
     using COMPANY.Domain.Entities;
     using COMPANY.Presistence;
     using COMPANY.Seed.Models;
-    using Company.AutoInjection;
+    using Inova.AutoInjection;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;

@@ -6,7 +6,7 @@
     using COMPANY.Application.Interfaces;
     using COMPANY.Application.Models.BusinessEntities.Parameters.LogementType;
     using COMPANY.Domain.Entities.Parameters;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System.Threading.Tasks;
 

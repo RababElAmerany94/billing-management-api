@@ -1,6 +1,6 @@
 ﻿namespace COMPANY.Application.Services.AuthService
 {
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Security.Cryptography;

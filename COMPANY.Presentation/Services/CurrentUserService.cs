@@ -10,7 +10,7 @@
     using COMPANY.Domain.Entities;
     using COMPANY.Domain.Enums.Authentification;
     using COMPANY.Helpers;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.DependencyInjection;
     using System;

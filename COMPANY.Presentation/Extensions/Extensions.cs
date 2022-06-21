@@ -10,11 +10,11 @@
     using COMPANY.Presistence.Builders;
     using COMPANY.Presistence.DataContext;
     using Coravel;
-    using Company.AutoInjection;
-    using Company.AutoMapperRegister;
-    using Company.SpotHit.Models;
-    using Company.SpotHit.Utilities;
-    using CompanyFileManager.Extensions;
+    using Inova.AutoInjection;
+    using Inova.AutoMapperRegister;
+    using Inova.SpotHit.Models;
+    using Inova.SpotHit.Utilities;
+    using InovaFileManager.Extensions;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
@@ -57,8 +57,8 @@
             // register AutoMapper
             services.AddAutoMapper(typeof(GlobalsMappingProfile).Assembly);
 
-            // configure Company File manager
-            services.AddCompanyFileManager(configuration.GetSection("CompanyFileManager").GetSection("Path").Value);
+            // configure Inova File manager
+            services.AddInovaFileManager(configuration.GetSection("InovaFileManager").GetSection("Path").Value);
 
             // Register Builders and Factories
             services.RegiseterApplicationFactoriesAndBuilders();

@@ -22,7 +22,7 @@
     using COMPANY.Domain.Enums;
     using COMPANY.Domain.Enums.Documents;
     using COMPANY.Domain.Enums.General;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Query;
     using Microsoft.Extensions.DependencyInjection;

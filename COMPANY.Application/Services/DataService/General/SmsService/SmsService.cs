@@ -11,10 +11,10 @@
     using COMPANY.Domain.Entities.Generals;
     using COMPANY.Helpers;
     using COMPANY.Presistence.Implementations;
-    using Company.AutoInjection.Attributes;
-    using Company.SpotHit.Interface;
-    using Company.SpotHit.Models;
-    using Company.SpotHit.Utilities;
+    using Inova.AutoInjection.Attributes;
+    using Inova.SpotHit.Interface;
+    using Inova.SpotHit.Models;
+    using Inova.SpotHit.Utilities;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;

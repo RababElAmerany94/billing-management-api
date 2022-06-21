@@ -15,7 +15,7 @@
     using COMPANY.Domain.Entities;
     using COMPANY.Domain.Entities.OwnedEntities;
     using COMPANY.Presistence.Implementations;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Collections.Generic;

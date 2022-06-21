@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Auth", "CompanySquad.Auth\Company.Auth.csproj", "{4AF320EC-88F4-454C-84E1-3E21D953E263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inova.Auth", "InovaSquad.Auth\Inova.Auth.csproj", "{4AF320EC-88F4-454C-84E1-3E21D953E263}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.FileManager", "CompanyFileManager\Company.FileManager.csproj", "{B1466950-438D-4C59-9CF6-5245A7DBAE25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inova.FileManager", "InovaFileManager\Inova.FileManager.csproj", "{B1466950-438D-4C59-9CF6-5245A7DBAE25}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COMPANY.Common", "COMPANY.Common\COMPANY.Common.csproj", "{65D0AB25-69A7-4E84-B6AF-3BF659F820A7}"
 EndProject
@@ -21,11 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COMPANY.Presistence", "COMP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COMPANY.Test", "COMPANY.Test\COMPANY.Test.csproj", "{D92F2E92-CFEE-410D-8619-8C136EB4CFE6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.SpotHit", "Company.SpotHit\Company.SpotHit.csproj", "{A0349964-22E5-41BB-97F7-9713A21DD7E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inova.SpotHit", "Inova.SpotHit\Inova.SpotHit.csproj", "{A0349964-22E5-41BB-97F7-9713A21DD7E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.AutoInjection", "Company.AutoInjection\Company.AutoInjection.csproj", "{5533FBE5-F312-4A15-A0D5-671D63A5EE2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inova.AutoInjection", "Inova.AutoInjection\Inova.AutoInjection.csproj", "{5533FBE5-F312-4A15-A0D5-671D63A5EE2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.AutoMapperRegister", "Company.AutoMapperRegister\Company.AutoMapperRegister.csproj", "{3D4B21F7-8866-4244-8E13-DCFE79120E24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inova.AutoMapperRegister", "Inova.AutoMapperRegister\Inova.AutoMapperRegister.csproj", "{3D4B21F7-8866-4244-8E13-DCFE79120E24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMPANY.Seed", "COMPANY.Seed\COMPANY.Seed.csproj", "{384B1DFA-98E3-46AC-85CC-5653D8DBCAC7}"
 EndProject

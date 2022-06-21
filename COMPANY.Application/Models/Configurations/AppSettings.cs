@@ -1,4 +1,4 @@
-﻿using Company.SpotHit.Models;
+﻿using Inova.SpotHit.Models;
 
 namespace COMPANY.Application.Models.GeneralModels
 {
@@ -8,7 +8,7 @@ namespace COMPANY.Application.Models.GeneralModels
     public partial class AppSettings
     {
         public ConnectionStrings ConnectionStrings { get; set; }
-        public CompanyFileManager CompanyFileManager { get; set; }
+        public InovaFileManager InovaFileManager { get; set; }
         public TokenAuthentication TokenAuthentication { get; set; }
         public BackgroundService BackgroundService { get; set; }
         public OneSignalSecrets OneSignalSecrets { get; set; }
@@ -28,9 +28,9 @@ namespace COMPANY.Application.Models.GeneralModels
     }
 
     /// <summary>
-    /// a class define configuration CompanyFileManager
+    /// a class define configuration InovaFileManager
     /// </summary>
-    public partial class CompanyFileManager
+    public partial class InovaFileManager
     {
         /// <summary>
         /// 

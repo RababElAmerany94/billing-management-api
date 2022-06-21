@@ -1442,7 +1442,7 @@ namespace COMPANY.Presistence.Migrations
                         new { Id = "AgendaEvenement::10", CreatedOn = new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Name = "Technique", Type = 3 },
                         new { Id = "AgendaEvenement::11", CreatedOn = new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Name = "Appel", Type = 2 },
                         new { Id = "AgendaEvenement::12", CreatedOn = new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Name = "rdv perso", Type = 4 },
-                        new { Id = "AgendaEvenement::13", CreatedOn = new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Name = "rdv my_company", Type = 4 }
+                        new { Id = "AgendaEvenement::13", CreatedOn = new DateTimeOffset(new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)), Name = "rdv company", Type = 4 }
                     );
                 });
 

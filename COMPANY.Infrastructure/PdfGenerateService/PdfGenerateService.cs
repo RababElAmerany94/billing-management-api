@@ -13,7 +13,7 @@
     using COMPANY.Domain.Enums.Documents;
     using COMPANY.Domain.Enums.General;
     using COMPANY.Infrastructure.Utilities;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using iTextSharp.text;
     using iTextSharp.text.pdf;
     using Microsoft.Extensions.DependencyInjection;

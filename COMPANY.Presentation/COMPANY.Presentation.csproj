@@ -35,9 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Company.SpotHit\Company.SpotHit.csproj" />
-    <ProjectReference Include="..\CompanyFileManager\Company.FileManager.csproj" />
-    <ProjectReference Include="..\CompanySquad.Auth\Company.Auth.csproj" />
+    <ProjectReference Include="..\Inova.SpotHit\Inova.SpotHit.csproj" />
+    <ProjectReference Include="..\InovaFileManager\Inova.FileManager.csproj" />
+    <ProjectReference Include="..\InovaSquad.Auth\Inova.Auth.csproj" />
     <ProjectReference Include="..\COMPANY.Application\COMPANY.Application.csproj" />
     <ProjectReference Include="..\COMPANY.Common\COMPANY.Common.csproj" />
     <ProjectReference Include="..\COMPANY.Domain\COMPANY.Domain.csproj" />

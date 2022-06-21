@@ -6,8 +6,8 @@
     using COMPANY.Common.Helpers;
     using COMPANY.Domain.Entities.Generals;
     using COMPANY.Helpers;
-    using Company.AutoInjection.Attributes;
-    using Company.SpotHit.Models;
+    using Inova.AutoInjection.Attributes;
+    using Inova.SpotHit.Models;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using System;

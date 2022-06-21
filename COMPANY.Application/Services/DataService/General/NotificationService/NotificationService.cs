@@ -6,7 +6,7 @@
     using COMPANY.Application.Interfaces;
     using COMPANY.Application.Models.BusinessEntities.General.Notification;
     using COMPANY.Domain.Entities.Generals;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Collections.Generic;

@@ -23,7 +23,7 @@
                     new AgendaEvenement(){ Id= "AgendaEvenement::10", Name="Technique", Type= AgendaEvenementType.CategorieEvenement },
                     new AgendaEvenement(){ Id= "AgendaEvenement::11", Name="Appel", Type= AgendaEvenementType.Appel },
                     new AgendaEvenement(){ Id= "AgendaEvenement::12", Name="rdv perso", Type= AgendaEvenementType.SourceRDV },
-                    new AgendaEvenement(){ Id= "AgendaEvenement::13", Name="rdv my_company", Type= AgendaEvenementType.SourceRDV },
+                    new AgendaEvenement(){ Id= "AgendaEvenement::13", Name="rdv company", Type= AgendaEvenementType.SourceRDV },
                 }
             );
         }

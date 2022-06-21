@@ -8,7 +8,7 @@
     using COMPANY.Application.Models.BusinessEntitiesModels.AccountingPeriodModals;
     using COMPANY.Common.Helpers;
     using COMPANY.Domain.Entities;
-    using Company.AutoInjection.Attributes;
+    using Inova.AutoInjection.Attributes;
     using Microsoft.Extensions.DependencyInjection;
     using System;
     using System.Linq.Expressions;

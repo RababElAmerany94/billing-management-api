@@ -2,7 +2,7 @@
 {
     using COMPANY.Application.Services.Generals.SpotHitHooksService;
     using COMPANY.Presentation.Controllers.Base;
-    using Company.SpotHit.Models;
+    using Inova.SpotHit.Models;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using System.Threading.Tasks;
